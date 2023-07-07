@@ -146,5 +146,8 @@
   <ItemGroup>
     <None Include="Resources\logo inteWL18-2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_save32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

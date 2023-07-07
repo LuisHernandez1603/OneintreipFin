@@ -29,41 +29,129 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.maskedb = new System.Windows.Forms.Button();
+            this.txtselectT = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.numerotel = new System.Windows.Forms.MaskedTextBox();
+            this.txtnum = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.txtlastname = new System.Windows.Forms.MaskedTextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.txtname = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.selecU = new System.Windows.Forms.ComboBox();
-            this.numerocel = new System.Windows.Forms.MaskedTextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.maskedb = new System.Windows.Forms.Button();
+            this.txtcel = new System.Windows.Forms.MaskedTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BtnSave = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.selecU);
+            this.groupBox1.Controls.Add(this.txtselectT);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.numerotel);
+            this.groupBox1.Controls.Add(this.txtnum);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.maskedTextBox2);
+            this.groupBox1.Controls.Add(this.txtlastname);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.maskedTextBox1);
+            this.groupBox1.Controls.Add(this.txtname);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(200, 56);
+            this.groupBox1.Location = new System.Drawing.Point(196, 37);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(400, 338);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // txtselectT
+            // 
+            this.txtselectT.FormattingEnabled = true;
+            this.txtselectT.Items.AddRange(new object[] {
+            "Universitario",
+            "Cuidadano"});
+            this.txtselectT.Location = new System.Drawing.Point(93, 253);
+            this.txtselectT.Name = "txtselectT";
+            this.txtselectT.Size = new System.Drawing.Size(225, 32);
+            this.txtselectT.TabIndex = 9;
+            this.txtselectT.Text = "Seleccione un usuario";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(89, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(245, 24);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "¡Ingrese sus datos porfavor!";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(116, 297);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(175, 24);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Ingrese Su N°cedula";
+            // 
+            // txtnum
+            // 
+            this.txtnum.BackColor = System.Drawing.Color.White;
+            this.txtnum.ForeColor = System.Drawing.Color.Black;
+            this.txtnum.Location = new System.Drawing.Point(93, 205);
+            this.txtnum.Mask = "+000-0000-0000";
+            this.txtnum.Name = "txtnum";
+            this.txtnum.Size = new System.Drawing.Size(225, 32);
+            this.txtnum.TabIndex = 5;
+            this.txtnum.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.numerotel_MaskInputRejected);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(102, 178);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(216, 24);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Ingrese su N°de telefono";
+            // 
+            // txtlastname
+            // 
+            this.txtlastname.BackColor = System.Drawing.Color.White;
+            this.txtlastname.ForeColor = System.Drawing.Color.Black;
+            this.txtlastname.Location = new System.Drawing.Point(93, 140);
+            this.txtlastname.Name = "txtlastname";
+            this.txtlastname.Size = new System.Drawing.Size(225, 32);
+            this.txtlastname.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(124, 113);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(167, 24);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Ingrese su apellido";
+            // 
+            // txtname
+            // 
+            this.txtname.BackColor = System.Drawing.Color.White;
+            this.txtname.ForeColor = System.Drawing.Color.Black;
+            this.txtname.Location = new System.Drawing.Point(93, 78);
+            this.txtname.Name = "txtname";
+            this.txtname.Size = new System.Drawing.Size(225, 32);
+            this.txtname.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(124, 51);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(165, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Ingrese su nombre";
             // 
             // button3
             // 
@@ -91,100 +179,16 @@
             this.maskedb.UseVisualStyleBackColor = false;
             this.maskedb.Click += new System.EventHandler(this.maskedb_Click);
             // 
-            // label5
+            // txtcel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(89, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(245, 24);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "¡Ingrese sus datos porfavor!";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(116, 297);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(175, 24);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Ingrese Su N°cedula";
-            // 
-            // numerotel
-            // 
-            this.numerotel.BackColor = System.Drawing.Color.White;
-            this.numerotel.ForeColor = System.Drawing.Color.Black;
-            this.numerotel.Location = new System.Drawing.Point(93, 205);
-            this.numerotel.Mask = "+000-0000-0000";
-            this.numerotel.Name = "numerotel";
-            this.numerotel.Size = new System.Drawing.Size(225, 32);
-            this.numerotel.TabIndex = 5;
-            this.numerotel.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.numerotel_MaskInputRejected);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(102, 178);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(216, 24);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Ingrese su N°de telefono";
-            // 
-            // maskedTextBox2
-            // 
-            this.maskedTextBox2.BackColor = System.Drawing.Color.White;
-            this.maskedTextBox2.ForeColor = System.Drawing.Color.Black;
-            this.maskedTextBox2.Location = new System.Drawing.Point(93, 140);
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(225, 32);
-            this.maskedTextBox2.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(124, 113);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(167, 24);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Ingrese su apellido";
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.BackColor = System.Drawing.Color.White;
-            this.maskedTextBox1.ForeColor = System.Drawing.Color.Black;
-            this.maskedTextBox1.Location = new System.Drawing.Point(93, 78);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(225, 32);
-            this.maskedTextBox1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(124, 51);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ingrese su nombre";
-            // 
-            // selecU
-            // 
-            this.selecU.FormattingEnabled = true;
-            this.selecU.Location = new System.Drawing.Point(93, 243);
-            this.selecU.Name = "selecU";
-            this.selecU.Size = new System.Drawing.Size(225, 32);
-            this.selecU.TabIndex = 9;
-            this.selecU.Text = "Seleccione un usuario";
-            // 
-            // numerocel
-            // 
-            this.numerocel.BackColor = System.Drawing.Color.White;
-            this.numerocel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numerocel.ForeColor = System.Drawing.Color.Black;
-            this.numerocel.Location = new System.Drawing.Point(293, 380);
-            this.numerocel.Mask = "000-000000-0000L";
-            this.numerocel.Name = "numerocel";
-            this.numerocel.Size = new System.Drawing.Size(225, 32);
-            this.numerocel.TabIndex = 14;
+            this.txtcel.BackColor = System.Drawing.Color.White;
+            this.txtcel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcel.ForeColor = System.Drawing.Color.Black;
+            this.txtcel.Location = new System.Drawing.Point(289, 361);
+            this.txtcel.Mask = "000-000000-0000L";
+            this.txtcel.Name = "txtcel";
+            this.txtcel.Size = new System.Drawing.Size(225, 32);
+            this.txtcel.TabIndex = 14;
             // 
             // pictureBox1
             // 
@@ -196,13 +200,25 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
+            // BtnSave
+            // 
+            this.BtnSave.BackgroundImage = global::OneintreipFin.Properties.Resources.btn_save32;
+            this.BtnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BtnSave.Location = new System.Drawing.Point(449, 399);
+            this.BtnSave.Name = "BtnSave";
+            this.BtnSave.Size = new System.Drawing.Size(38, 38);
+            this.BtnSave.TabIndex = 18;
+            this.BtnSave.UseVisualStyleBackColor = true;
+            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
+            // 
             // CrearCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(206)))), ((int)(((byte)(223)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.numerocel);
+            this.Controls.Add(this.BtnSave);
+            this.Controls.Add(this.txtcel);
             this.Controls.Add(this.maskedb);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox1);
@@ -226,14 +242,15 @@
         private System.Windows.Forms.Button maskedb;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.MaskedTextBox numerotel;
+        private System.Windows.Forms.MaskedTextBox txtnum;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox txtlastname;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox txtname;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ComboBox selecU;
-        private System.Windows.Forms.MaskedTextBox numerocel;
+        private System.Windows.Forms.ComboBox txtselectT;
+        private System.Windows.Forms.MaskedTextBox txtcel;
+        private System.Windows.Forms.Button BtnSave;
     }
 }

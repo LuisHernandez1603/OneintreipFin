@@ -63,6 +63,16 @@ namespace OneintreipFin.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btn_save32 {
+            get {
+                object obj = ResourceManager.GetObject("btn_save32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo_inteWL18_2 {
             get {
                 object obj = ResourceManager.GetObject("logo inteWL18-2", resourceCulture);
