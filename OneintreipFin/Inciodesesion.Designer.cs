@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,9 +40,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CrearC = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.configuracionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -56,7 +61,7 @@
             this.groupBox1.Controls.Add(this.txtUser);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(115, 114);
+            this.groupBox1.Location = new System.Drawing.Point(239, 104);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -64,6 +69,15 @@
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Iniciar Sesion ";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(143, 174);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(280, 35);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "Olvide mi contraseña";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // textBox4
             // 
@@ -148,7 +162,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::OneintreipFin.Properties.Resources.logo_inteWL18_2;
-            this.pictureBox1.Location = new System.Drawing.Point(633, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(815, 31);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(155, 165);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -158,7 +172,7 @@
             // CrearC
             // 
             this.CrearC.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CrearC.Location = new System.Drawing.Point(316, 403);
+            this.CrearC.Location = new System.Drawing.Point(440, 386);
             this.CrearC.Name = "CrearC";
             this.CrearC.Size = new System.Drawing.Size(150, 35);
             this.CrearC.TabIndex = 8;
@@ -166,21 +180,44 @@
             this.CrearC.UseVisualStyleBackColor = true;
             this.CrearC.Click += new System.EventHandler(this.CrearC_Click);
             // 
-            // button3
+            // menuStrip1
             // 
-            this.button3.Location = new System.Drawing.Point(143, 174);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(280, 35);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Olvide mi contraseña";
-            this.button3.UseVisualStyleBackColor = true;
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.configuracionToolStripMenuItem,
+            this.ayudaToolStripMenuItem,
+            this.salirToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(982, 28);
+            this.menuStrip1.TabIndex = 30;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // configuracionToolStripMenuItem
+            // 
+            this.configuracionToolStripMenuItem.Name = "configuracionToolStripMenuItem";
+            this.configuracionToolStripMenuItem.Size = new System.Drawing.Size(116, 24);
+            this.configuracionToolStripMenuItem.Text = "Configuracion";
+            // 
+            // ayudaToolStripMenuItem
+            // 
+            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
+            this.ayudaToolStripMenuItem.Text = "Ayuda";
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(52, 24);
+            this.salirToolStripMenuItem.Text = "Salir";
             // 
             // Inciodesesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(206)))), ((int)(((byte)(223)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(982, 503);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.CrearC);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
@@ -191,7 +228,10 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -209,5 +249,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button CrearC;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem configuracionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
     }
 }

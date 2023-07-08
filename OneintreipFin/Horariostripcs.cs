@@ -26,5 +26,10 @@ namespace OneintreipFin
             Horarios.Items.Add("6:40");
             Horarios.Items.Add("6:50");
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

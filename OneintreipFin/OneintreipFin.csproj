@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Asientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asientos.Designer.cs">
+      <DependentUpon>Asientos.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConfirmarrUsuariocs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Asientos.resx">
+      <DependentUpon>Asientos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConfirmarrUsuariocs.resx">
       <DependentUpon>ConfirmarrUsuariocs.cs</DependentUpon>
     </EmbeddedResource>

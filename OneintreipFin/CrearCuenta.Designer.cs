@@ -41,9 +41,14 @@
             this.button3 = new System.Windows.Forms.Button();
             this.maskedb = new System.Windows.Forms.Button();
             this.txtcel = new System.Windows.Forms.MaskedTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.configuracionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.BtnSave = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,7 +64,7 @@
             this.groupBox1.Controls.Add(this.txtname);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(196, 37);
+            this.groupBox1.Location = new System.Drawing.Point(289, 72);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(400, 338);
             this.groupBox1.TabIndex = 11;
@@ -72,7 +77,7 @@
             this.txtselectT.Items.AddRange(new object[] {
             "Universitario",
             "Cuidadano"});
-            this.txtselectT.Location = new System.Drawing.Point(93, 253);
+            this.txtselectT.Location = new System.Drawing.Point(93, 265);
             this.txtselectT.Name = "txtselectT";
             this.txtselectT.Size = new System.Drawing.Size(225, 32);
             this.txtselectT.TabIndex = 9;
@@ -81,7 +86,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(89, 0);
+            this.label5.Location = new System.Drawing.Point(89, 18);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(245, 24);
             this.label5.TabIndex = 8;
@@ -91,7 +96,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(116, 297);
+            this.label4.Location = new System.Drawing.Point(116, 311);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(175, 24);
             this.label4.TabIndex = 6;
@@ -101,7 +106,7 @@
             // 
             this.txtnum.BackColor = System.Drawing.Color.White;
             this.txtnum.ForeColor = System.Drawing.Color.Black;
-            this.txtnum.Location = new System.Drawing.Point(93, 205);
+            this.txtnum.Location = new System.Drawing.Point(93, 212);
             this.txtnum.Mask = "+000-0000-0000";
             this.txtnum.Name = "txtnum";
             this.txtnum.Size = new System.Drawing.Size(225, 32);
@@ -111,7 +116,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(102, 178);
+            this.label3.Location = new System.Drawing.Point(102, 175);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(216, 24);
             this.label3.TabIndex = 4;
@@ -158,7 +163,7 @@
             this.button3.BackColor = System.Drawing.Color.Transparent;
             this.button3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(650, 403);
+            this.button3.Location = new System.Drawing.Point(832, 456);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(138, 35);
             this.button3.TabIndex = 10;
@@ -171,7 +176,7 @@
             this.maskedb.BackColor = System.Drawing.Color.Transparent;
             this.maskedb.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedb.ForeColor = System.Drawing.Color.Black;
-            this.maskedb.Location = new System.Drawing.Point(12, 403);
+            this.maskedb.Location = new System.Drawing.Point(12, 456);
             this.maskedb.Name = "maskedb";
             this.maskedb.Size = new System.Drawing.Size(138, 35);
             this.maskedb.TabIndex = 9;
@@ -184,39 +189,71 @@
             this.txtcel.BackColor = System.Drawing.Color.White;
             this.txtcel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcel.ForeColor = System.Drawing.Color.Black;
-            this.txtcel.Location = new System.Drawing.Point(289, 361);
+            this.txtcel.Location = new System.Drawing.Point(382, 415);
             this.txtcel.Mask = "000-000000-0000L";
             this.txtcel.Name = "txtcel";
             this.txtcel.Size = new System.Drawing.Size(225, 32);
             this.txtcel.TabIndex = 14;
             // 
-            // pictureBox1
+            // menuStrip1
             // 
-            this.pictureBox1.Image = global::OneintreipFin.Properties.Resources.logo_inteWL18_2;
-            this.pictureBox1.Location = new System.Drawing.Point(633, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(155, 165);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.configuracionToolStripMenuItem,
+            this.ayudaToolStripMenuItem,
+            this.salirToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(982, 28);
+            this.menuStrip1.TabIndex = 31;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // configuracionToolStripMenuItem
+            // 
+            this.configuracionToolStripMenuItem.Name = "configuracionToolStripMenuItem";
+            this.configuracionToolStripMenuItem.Size = new System.Drawing.Size(116, 24);
+            this.configuracionToolStripMenuItem.Text = "Configuracion";
+            // 
+            // ayudaToolStripMenuItem
+            // 
+            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
+            this.ayudaToolStripMenuItem.Text = "Ayuda";
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(52, 24);
+            this.salirToolStripMenuItem.Text = "Salir";
             // 
             // BtnSave
             // 
             this.BtnSave.BackgroundImage = global::OneintreipFin.Properties.Resources.btn_save32;
             this.BtnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.BtnSave.Location = new System.Drawing.Point(449, 399);
+            this.BtnSave.Location = new System.Drawing.Point(470, 456);
             this.BtnSave.Name = "BtnSave";
             this.BtnSave.Size = new System.Drawing.Size(38, 38);
             this.BtnSave.TabIndex = 18;
             this.BtnSave.UseVisualStyleBackColor = true;
             this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::OneintreipFin.Properties.Resources.logo_inteWL18_2;
+            this.pictureBox1.Location = new System.Drawing.Point(815, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(155, 165);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
             // CrearCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(206)))), ((int)(((byte)(223)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(982, 503);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.BtnSave);
             this.Controls.Add(this.txtcel);
             this.Controls.Add(this.maskedb);
@@ -229,6 +266,8 @@
             this.Load += new System.EventHandler(this.CrearCuenta_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -252,5 +291,9 @@
         private System.Windows.Forms.ComboBox txtselectT;
         private System.Windows.Forms.MaskedTextBox txtcel;
         private System.Windows.Forms.Button BtnSave;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem configuracionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
     }
 }
