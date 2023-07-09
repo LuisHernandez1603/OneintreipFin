@@ -21,5 +21,11 @@ namespace OneintreipFin
         {
 
         }
+
+        private void MetodoPNeto_Load(object sender, EventArgs e)
+        {
+
+
+        }
     }
 }

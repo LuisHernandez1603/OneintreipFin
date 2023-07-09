@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Runtime.CompilerServices.RuntimeHelpers;
 using System.Xml.Linq;
+using System.Windows.Forms.VisualStyles;
 
 namespace OneintreipFin
 {
@@ -60,26 +61,40 @@ namespace OneintreipFin
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string numerotel = this.txtnum.Text;
-            if (numerotel[0] == '+' && numerotel[1] == '5' && numerotel[2] == '0' && numerotel[3] == '5')
-            {
-                MessageBox.Show("Número de teléfono nicaragüense válido.", "Verificación exitosa",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            FileStream fs;
+            StreamWriter writerFile; //Objeto para manejar la escritura que permita el fichero
+            string Line; //Varible por medio de la cual se tomaran los datos a escribir
+
+            //determinar donde se encuentra el directorio raiz de la aplicación
+            string basePath = Directory.GetCurrentDirectory();
+            string filePath = basePath.Replace(@"\bin\Debug", @"\file\RegistroUsuario.txt");
+            fs = new FileStream(filePath, FileMode.Append);
+
+            //Crear el objeto para la escritura en el archivo
+            writerFile = new StreamWriter(fs);
+            //Proceder con el guardado de los datons en el formulario
+            Line = txtname.Text + ";";
+            Line += txtlastname.Text + ";";
+            Line += txtnum.Text + ";";
+            Line += txtcel.Text + ";";
+
+            Line += txtselectT.SelectedItem as string;
 
 
-            }
-            else
-            {
-                MessageBox.Show("Número de teléfono incorrecto. Por favor, ingrese un número de teléfono nicaragüense válido.", "Verificación fallida",
-                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+            writerFile.WriteLine(Line.ToUpper());
+            writerFile.Close();
+
+            MessageBox.Show("El Registro se \n ha completado", "Guardar Registro"
+                , MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+             DestinosTrip CrearCuentaForm =
+       new
+          DestinosTrip ();
+            CrearCuentaForm.Show();
 
 
-
-            }
-            this.Hide();
-            ConfirmarUsuariocs confirmarUsuariocs = new ConfirmarUsuariocs();
-            confirmarUsuariocs.ShowDialog();
-            this.Close();
+            this
+            .Close();
 
         }
 

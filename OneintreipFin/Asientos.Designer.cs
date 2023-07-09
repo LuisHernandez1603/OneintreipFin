@@ -60,6 +60,8 @@
             this.button26 = new System.Windows.Forms.Button();
             this.button27 = new System.Windows.Forms.Button();
             this.button28 = new System.Windows.Forms.Button();
+            this.TxtCode = new System.Windows.Forms.TextBox();
+            this.Generar = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -343,9 +345,26 @@
             this.button28.BackColor = System.Drawing.Color.Black;
             this.button28.Location = new System.Drawing.Point(665, 139);
             this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(58, 110);
+            this.button28.Size = new System.Drawing.Size(58, 104);
             this.button28.TabIndex = 61;
             this.button28.UseVisualStyleBackColor = false;
+            // 
+            // TxtCode
+            // 
+            this.TxtCode.Location = new System.Drawing.Point(797, 139);
+            this.TxtCode.Name = "TxtCode";
+            this.TxtCode.Size = new System.Drawing.Size(100, 22);
+            this.TxtCode.TabIndex = 62;
+            // 
+            // Generar
+            // 
+            this.Generar.Location = new System.Drawing.Point(810, 167);
+            this.Generar.Name = "Generar";
+            this.Generar.Size = new System.Drawing.Size(75, 23);
+            this.Generar.TabIndex = 63;
+            this.Generar.Text = "Generar";
+            this.Generar.UseVisualStyleBackColor = true;
+            this.Generar.Click += new System.EventHandler(this.Generar_Click);
             // 
             // Asientos
             // 
@@ -353,6 +372,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(206)))), ((int)(((byte)(223)))));
             this.ClientSize = new System.Drawing.Size(982, 503);
+            this.Controls.Add(this.Generar);
+            this.Controls.Add(this.TxtCode);
             this.Controls.Add(this.button28);
             this.Controls.Add(this.button26);
             this.Controls.Add(this.button27);
@@ -384,6 +405,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Name = "Asientos";
             this.Text = "Asientos";
+            this.Load += new System.EventHandler(this.Asientos_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -425,5 +447,7 @@
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button button27;
         private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.TextBox TxtCode;
+        private System.Windows.Forms.Button Generar;
     }
 }

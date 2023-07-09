@@ -19,7 +19,8 @@ namespace OneintreipFin
             Application.Run(new Form1());
             Application.Run(new Inciodesesion());
             Application.Run(new CrearCuenta());
-            Application.Run(new Horariostripcs());
+            Application.Run(new Asientos());
+
         }
     }
 }

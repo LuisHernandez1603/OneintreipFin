@@ -13,8 +13,7 @@ namespace OneintreipFin
 {
     public partial class Inciodesesion : Form
     {
-        string usuario = "messi22@gmail.com";
-        string contraseña = "messigoat";
+        
         public Inciodesesion()
         {
             InitializeComponent();
@@ -27,41 +26,69 @@ namespace OneintreipFin
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (txtUser.Text != usuario || txtUser.Text != contraseña)
+            string
+              basePath = Directory.GetCurrentDirectory();
+            string filePath = basePath.Replace(@"\bin\Debug", @"\file\RegistroUsuario.txt");
+
+            string username = txtUser.Text;
+            string password = txtpass.Text;
+
+            bool validUser =
+            false
+            ;
+
+            try
+
             {
 
-                if (txtUser.Text != usuario)
+                string
+                [] lines = File.ReadAllLines(filePath);
+
+
+                foreach
+                 (string line in lines)
                 {
-                    MessageBox.Show("Usuario Incorrecto");
-                    txtUser.Clear();
-                    txtUser.Focus();
-                    return;
+
+                    string
+                    [] fields = line.Split(
+                    ';'
+                    );
+
+                    if
+                     (fields.Length >= 2 && fields[0] == username && fields[1] == password)
+                    {
+                        validUser = true; break;
+                    }
                 }
-                if (txtpass.Text != contraseña)
-                {
-                    MessageBox.Show("Contraseña Incorrecta");
-                    txtpass.Clear();
-                    txtpass.Focus();
-                    return;
+            }
+            catch
+             (Exception ex)
+            {
+                MessageBox.Show("Error al leer el archivo: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+                return;
+            }
 
-                }
+            if
+             (validUser)
+            {
+                MessageBox.Show("Sesión iniciada correctamente. ¡Bienvenido!", "Inicio de sesión exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                DestinosTrip InicioDeSecionForm =
+            new
+              DestinosTrip ();
+                InicioDeSecionForm.Show();
+
+                this
+                .Hide();
             }
             else
+
             {
-                txtUser.Clear();
-                txtpass.Clear();
-                Inciodesesion form = new Inciodesesion();
-                form.ShowDialog();
-
+                MessageBox.Show("Usuario no válido", "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            this.Hide();
-            DestinosTrip destinosTrip = new DestinosTrip();
-            destinosTrip.Show();
-           
 
-          
+
         }
 
         private void CrearC_Click(object sender, EventArgs e)

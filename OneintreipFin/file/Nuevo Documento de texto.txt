@@ -1,0 +1,20 @@
+  string numerotel = this.txtnum.Text;
+            if (numerotel[0] == '+' && numerotel[1] == '5' && numerotel[2] == '0' && numerotel[3] == '5')
+            {
+                MessageBox.Show("Número de teléfono nicaragüense válido.", "Verificación exitosa",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+            }
+            else
+            {
+                MessageBox.Show("Número de teléfono incorrecto. Por favor, ingrese un número de teléfono nicaragüense válido.", "Verificación fallida",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+
+
+            }
+            this.Hide();
+            ConfirmarUsuariocs confirmarUsuariocs = new ConfirmarUsuariocs();
+            confirmarUsuariocs.ShowDialog();
+            this.Close();

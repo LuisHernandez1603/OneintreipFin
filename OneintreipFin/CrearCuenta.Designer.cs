@@ -134,11 +134,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(124, 113);
+            this.label2.Location = new System.Drawing.Point(153, 113);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(167, 24);
+            this.label2.Size = new System.Drawing.Size(106, 24);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Ingrese su apellido";
+            this.label2.Text = "Contraseña";
             // 
             // txtname
             // 
@@ -230,7 +230,7 @@
             // 
             this.BtnSave.BackgroundImage = global::OneintreipFin.Properties.Resources.btn_save32;
             this.BtnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.BtnSave.Location = new System.Drawing.Point(470, 456);
+            this.BtnSave.Location = new System.Drawing.Point(673, 233);
             this.BtnSave.Name = "BtnSave";
             this.BtnSave.Size = new System.Drawing.Size(38, 38);
             this.BtnSave.TabIndex = 18;
