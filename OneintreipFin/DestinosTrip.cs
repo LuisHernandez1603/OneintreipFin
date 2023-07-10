@@ -19,10 +19,24 @@ namespace OneintreipFin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+           
+                this.Hide();
             Horariostripcs horariostripcs = new Horariostripcs();
             horariostripcs.Show();
             this.Close();
+
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Inciodesesion inciodesesion = new Inciodesesion();
+            inciodesesion.Show();  
         }
     }
 }

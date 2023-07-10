@@ -38,7 +38,7 @@ namespace OneintreipFin
 
         private void CrearCuenta_Load(object sender, EventArgs e)
         {
-            txtselectT.SelectedIndex = 0; //SELECCIONAR EL PRIMER ELEMNTO DEL COMBOBOX
+            txtselectU.SelectedIndex = 0; //SELECCIONAR EL PRIMER ELEMNTO DEL COMBOBOX
             
 
         }
@@ -77,8 +77,9 @@ namespace OneintreipFin
             Line += txtlastname.Text + ";";
             Line += txtnum.Text + ";";
             Line += txtcel.Text + ";";
+            Line += txtsexo.Text + ";";
 
-            Line += txtselectT.SelectedItem as string;
+            Line += txtselectU.SelectedItem as string;
 
 
             writerFile.WriteLine(Line.ToUpper());
@@ -101,7 +102,10 @@ namespace OneintreipFin
 
         private void maskedb_Click(object sender, EventArgs e)
         {
-            txtnum.Clear();
+            this.Hide();
+            Inciodesesion inciodesesion = new Inciodesesion ();
+            inciodesesion.Show();
+            this .Close();
         }
 
         private void BtnSave_Click(object sender, EventArgs e)
@@ -129,9 +133,10 @@ namespace OneintreipFin
             line = txtname.Text + ";";// tomar el texto que esta en el control TxtCode
             line += txtlastname.Text + ";";//unir el contenido de line con el de la caja de texto
             line += txtnum.Text + ";";
-            line += txtselectT.Text + ";";
-            line += txtcel.Text + ";";    
-            line += txtselectT.SelectedItem as string; //tomar como cadena el valor del combo
+            line += txtselectU.Text + ";";
+            line += txtcel.Text + ";";
+            line += txtsexo.Text + ";";
+            line += txtselectU.SelectedItem as string; //tomar como cadena el valor del combo
 
             //escribir en el archivo lo que se tiene captutrado en la variable line
             writerFile.WriteLine(line.ToUpper()); //pasar a mayuscula todo el texto
@@ -141,6 +146,29 @@ namespace OneintreipFin
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }//fin de guardar
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Estás seguro que quieres salir?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+
+
+                foreach (Form form in Application.OpenForms)
+                {
+                    form.Hide();
+
+                }
+                Application.Exit();
+
+
+            }
+        }
+
+        private void txtselectT_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

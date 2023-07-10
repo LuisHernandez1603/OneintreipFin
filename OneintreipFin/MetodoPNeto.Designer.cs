@@ -31,6 +31,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtcel = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.txtselectT = new System.Windows.Forms.ComboBox();
             this.txtnum = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,7 +39,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtname = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.configuracionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -88,6 +88,16 @@
             this.groupBox1.Size = new System.Drawing.Size(400, 338);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(57, 28);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(314, 24);
+            this.label7.TabIndex = 28;
+            this.label7.Text = "Costo de pago por persona C$:26.00";
             // 
             // txtselectT
             // 
@@ -156,16 +166,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Ingrese su nombre";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(57, 28);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(314, 24);
-            this.label7.TabIndex = 28;
-            this.label7.Text = "Costo de pago por persona C$:26.00";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -206,6 +206,7 @@
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(52, 24);
             this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // pictureBox1
             // 

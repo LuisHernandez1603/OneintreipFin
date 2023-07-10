@@ -20,6 +20,7 @@ namespace OneintreipFin
             Application.Run(new Inciodesesion());
             Application.Run(new CrearCuenta());
             Application.Run(new Asientos());
+            Application.Run(new MetodoTarjeta());
 
         }
     }

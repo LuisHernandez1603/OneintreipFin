@@ -7,10 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace OneintreipFin
 {
     public partial class MetodoTarjeta : Form
+
     {
         public MetodoTarjeta()
         {
@@ -26,7 +29,7 @@ namespace OneintreipFin
 
         private void guardart_Click(object sender, EventArgs e)
         {
-            if (txtNumeroTarjeta.Text == "1234567890" && txtCodigoSeguridad.Text == "123")
+            if (txtNumeroTarjeta.Text == "1234567890" && txtcvv.Text == "123" && txtexp.Text == "03/27")
             {
 
 
@@ -36,7 +39,13 @@ namespace OneintreipFin
             {
                 MessageBox.Show("El pago no pudo ser procesado. Por favor, verifique los detalles de su tarjeta.", "Pago fallido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+
+
+
         }
+
+        
+
 
         private void combotarjetas_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -72,9 +81,12 @@ namespace OneintreipFin
         {
 
         }
+        
 
         private void txtFechaExpiracion_TextChanged(object sender, EventArgs e)
         {
+            
+
 
         }
 
@@ -85,6 +97,25 @@ namespace OneintreipFin
 
         private void label1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void txtexp_TextChanged(object sender, EventArgs e)
+        {
+            string fechaExpiracion = txtexp.Text;
+
+            if (fechaExpiracion == "07/23")
+            {
+                // Código a ejecutar si la fecha de expiración es válida
+                Console.WriteLine("Fecha de expiración válida");
+                
+            }
+            else
+            {
+                // Código a ejecutar si la fecha de expiración no es válida
+                Console.WriteLine("Fecha de expiración inválida");
+                
+            }
 
         }
     }

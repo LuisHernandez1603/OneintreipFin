@@ -47,6 +47,29 @@ namespace OneintreipFin
         {
 
 
-        } 
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Estás seguro que quieres salir?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+
+
+                foreach (Form form in Application.OpenForms)
+                {
+                    form.Hide();
+
+                }
+                Application.Exit();
+
+
+            }
+        }
     }
 }

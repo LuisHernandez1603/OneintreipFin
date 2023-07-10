@@ -81,6 +81,7 @@
             this.button2.TabIndex = 12;
             this.button2.Text = "Pago con tarjeta";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -163,6 +164,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Horarios);
             this.Name = "Horariostripcs";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Horariostripcs";
             this.Load += new System.EventHandler(this.Horariostripcs_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

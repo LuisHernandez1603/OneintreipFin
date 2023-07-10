@@ -33,10 +33,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtNumeroTarjeta = new System.Windows.Forms.TextBox();
-            this.txtCodigoSeguridad = new System.Windows.Forms.TextBox();
+            this.txtcvv = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtFechaExpiracion = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -46,6 +45,7 @@
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label7 = new System.Windows.Forms.Label();
+            this.txtexp = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -101,13 +101,13 @@
             this.txtNumeroTarjeta.TabIndex = 21;
             this.txtNumeroTarjeta.TextChanged += new System.EventHandler(this.txtNumeroTarjeta_TextChanged);
             // 
-            // txtCodigoSeguridad
+            // txtcvv
             // 
-            this.txtCodigoSeguridad.Location = new System.Drawing.Point(403, 323);
-            this.txtCodigoSeguridad.Name = "txtCodigoSeguridad";
-            this.txtCodigoSeguridad.Size = new System.Drawing.Size(158, 22);
-            this.txtCodigoSeguridad.TabIndex = 20;
-            this.txtCodigoSeguridad.TextChanged += new System.EventHandler(this.txtCodigoSeguridad_TextChanged);
+            this.txtcvv.Location = new System.Drawing.Point(403, 323);
+            this.txtcvv.Name = "txtcvv";
+            this.txtcvv.Size = new System.Drawing.Size(158, 22);
+            this.txtcvv.TabIndex = 20;
+            this.txtcvv.TextChanged += new System.EventHandler(this.txtCodigoSeguridad_TextChanged);
             // 
             // label4
             // 
@@ -128,14 +128,6 @@
             this.label3.TabIndex = 18;
             this.label3.Text = "Caducidad";
             this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // txtFechaExpiracion
-            // 
-            this.txtFechaExpiracion.Location = new System.Drawing.Point(399, 272);
-            this.txtFechaExpiracion.Name = "txtFechaExpiracion";
-            this.txtFechaExpiracion.Size = new System.Drawing.Size(213, 22);
-            this.txtFechaExpiracion.TabIndex = 17;
-            this.txtFechaExpiracion.TextChanged += new System.EventHandler(this.txtFechaExpiracion_TextChanged);
             // 
             // label2
             // 
@@ -219,12 +211,21 @@
             this.label7.TabIndex = 27;
             this.label7.Text = "Costo de pago por persona C$:26.00";
             // 
+            // txtexp
+            // 
+            this.txtexp.Location = new System.Drawing.Point(399, 272);
+            this.txtexp.Name = "txtexp";
+            this.txtexp.Size = new System.Drawing.Size(162, 22);
+            this.txtexp.TabIndex = 30;
+            this.txtexp.TextChanged += new System.EventHandler(this.txtexp_TextChanged);
+            // 
             // MetodoTarjeta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(206)))), ((int)(((byte)(223)))));
             this.ClientSize = new System.Drawing.Size(982, 503);
+            this.Controls.Add(this.txtexp);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox1);
@@ -233,10 +234,9 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtNumeroTarjeta);
-            this.Controls.Add(this.txtCodigoSeguridad);
+            this.Controls.Add(this.txtcvv);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtFechaExpiracion);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
@@ -259,10 +259,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtNumeroTarjeta;
-        private System.Windows.Forms.TextBox txtCodigoSeguridad;
+        private System.Windows.Forms.TextBox txtcvv;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtFechaExpiracion;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -272,5 +271,6 @@
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtexp;
     }
 }

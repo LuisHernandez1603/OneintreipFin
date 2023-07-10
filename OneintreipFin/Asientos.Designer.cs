@@ -95,33 +95,40 @@
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(52, 24);
             this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Lime;
+            this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(283, 139);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(58, 49);
             this.button1.TabIndex = 32;
+            this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Lime;
+            this.button2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.button2.Location = new System.Drawing.Point(411, 139);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(58, 49);
             this.button2.TabIndex = 33;
+            this.button2.Text = "3";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Lime;
+            this.button3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.button3.Location = new System.Drawing.Point(347, 139);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(58, 49);
             this.button3.TabIndex = 34;
+            this.button3.Text = "2";
             this.button3.UseVisualStyleBackColor = false;
             // 
             // button4
@@ -145,10 +152,12 @@
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.Lime;
+            this.button6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.button6.Location = new System.Drawing.Point(475, 139);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(58, 49);
             this.button6.TabIndex = 37;
+            this.button6.Text = "4";
             this.button6.UseVisualStyleBackColor = false;
             // 
             // button7
@@ -404,6 +413,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "Asientos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Asientos";
             this.Load += new System.EventHandler(this.Asientos_Load);
             this.menuStrip1.ResumeLayout(false);
