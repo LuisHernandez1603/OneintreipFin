@@ -242,6 +242,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MetodoTarjeta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MetodoTarjeta";
             this.Load += new System.EventHandler(this.MetodoTarjeta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

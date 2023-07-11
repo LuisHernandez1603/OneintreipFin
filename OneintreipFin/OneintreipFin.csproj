@@ -100,6 +100,12 @@
     <Compile Include="MetodoTarjeta.Designer.cs">
       <DependentUpon>MetodoTarjeta.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyProfile.Designer.cs">
+      <DependentUpon>MyProfile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Asientos.resx">
@@ -129,6 +135,9 @@
     <EmbeddedResource Include="MetodoTarjeta.resx">
       <DependentUpon>MetodoTarjeta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MyProfile.resx">
+      <DependentUpon>MyProfile.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -157,6 +166,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btn_save32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %287%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

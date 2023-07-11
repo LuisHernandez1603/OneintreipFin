@@ -39,6 +39,7 @@
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.miPerfilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -130,6 +131,8 @@
             // 
             // configuracionToolStripMenuItem
             // 
+            this.configuracionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.miPerfilToolStripMenuItem});
             this.configuracionToolStripMenuItem.Name = "configuracionToolStripMenuItem";
             this.configuracionToolStripMenuItem.Size = new System.Drawing.Size(116, 24);
             this.configuracionToolStripMenuItem.Text = "Configuracion";
@@ -156,6 +159,13 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
+            // 
+            // miPerfilToolStripMenuItem
+            // 
+            this.miPerfilToolStripMenuItem.Name = "miPerfilToolStripMenuItem";
+            this.miPerfilToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.miPerfilToolStripMenuItem.Text = "Mi Perfil";
+            this.miPerfilToolStripMenuItem.Click += new System.EventHandler(this.miPerfilToolStripMenuItem_Click);
             // 
             // DestinosTrip
             // 
@@ -195,5 +205,6 @@
         private System.Windows.Forms.ToolStripMenuItem configuracionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miPerfilToolStripMenuItem;
     }
 }

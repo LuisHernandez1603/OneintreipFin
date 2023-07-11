@@ -18,6 +18,7 @@ namespace OneintreipFin
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
             Application.Run(new Inciodesesion());
+            Application.Run(new MyProfile());
       
         }
     }

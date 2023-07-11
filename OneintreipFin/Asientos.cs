@@ -28,18 +28,9 @@ namespace OneintreipFin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (!isRed)
-            {
-                // Cambiar el color del botón a rojo
-                button1.BackColor = Color.Red;
-                isRed = true;
-            }
-            else
-            {
-                // Restaurar el color original del botón (verde)
-                button1.BackColor = originalColor;
-                isRed = false;
-            }
+            MessageBox.Show("Has reservado el asiento 1", "Genere su codigo porfavor");
+            
+            
         }
 
         private void Generar_Click(object sender, EventArgs e)
@@ -517,6 +508,11 @@ namespace OneintreipFin
                 button22.BackColor = originalColor;
                 isRed = false;
             }
+        }
+
+        private void miPerfilToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

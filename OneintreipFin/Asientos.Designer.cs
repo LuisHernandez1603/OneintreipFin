@@ -62,6 +62,7 @@
             this.button28 = new System.Windows.Forms.Button();
             this.TxtCode = new System.Windows.Forms.TextBox();
             this.Generar = new System.Windows.Forms.Button();
+            this.miPerfilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,20 +81,22 @@
             // 
             // configuracionToolStripMenuItem
             // 
+            this.configuracionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.miPerfilToolStripMenuItem});
             this.configuracionToolStripMenuItem.Name = "configuracionToolStripMenuItem";
-            this.configuracionToolStripMenuItem.Size = new System.Drawing.Size(116, 26);
+            this.configuracionToolStripMenuItem.Size = new System.Drawing.Size(116, 24);
             this.configuracionToolStripMenuItem.Text = "Configuracion";
             // 
             // ayudaToolStripMenuItem
             // 
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(65, 26);
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(52, 26);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(52, 24);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -450,6 +453,13 @@
             this.Generar.UseVisualStyleBackColor = true;
             this.Generar.Click += new System.EventHandler(this.Generar_Click);
             // 
+            // miPerfilToolStripMenuItem
+            // 
+            this.miPerfilToolStripMenuItem.Name = "miPerfilToolStripMenuItem";
+            this.miPerfilToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.miPerfilToolStripMenuItem.Text = "Mi Perfil";
+            this.miPerfilToolStripMenuItem.Click += new System.EventHandler(this.miPerfilToolStripMenuItem_Click);
+            // 
             // Asientos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -534,5 +544,6 @@
         private System.Windows.Forms.Button button28;
         private System.Windows.Forms.TextBox TxtCode;
         private System.Windows.Forms.Button Generar;
+        private System.Windows.Forms.ToolStripMenuItem miPerfilToolStripMenuItem;
     }
 }
