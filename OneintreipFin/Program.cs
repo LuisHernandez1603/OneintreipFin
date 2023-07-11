@@ -18,10 +18,7 @@ namespace OneintreipFin
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
             Application.Run(new Inciodesesion());
-            Application.Run(new CrearCuenta());
-            Application.Run(new Asientos());
-            Application.Run(new MetodoTarjeta());
-
+      
         }
     }
 }

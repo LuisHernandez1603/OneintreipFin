@@ -14,13 +14,17 @@ namespace OneintreipFin
     {
         
 
-        public Asientos()
-        {
-            InitializeComponent();
-        }
-        private Color originalColor; // Variable para almacenar el color original del botón
-        private bool isRed = false; // Variable para almacenar el estado actual del bo
-        
+    public Asientos()
+    {
+     InitializeComponent();
+    }
+
+        private Color originalColor;
+
+        // Variable para almacenar el color original del botón
+        private bool isRed = false; // Variable para almacenar el estado actual del botón
+
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -94,6 +98,425 @@ namespace OneintreipFin
 
             }
 
+        }
+
+         
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            if (!isRed)
+            {
+                // Cambiar el color del botón a rojo
+                button1.BackColor = Color.Red;
+                isRed = true;
+            }
+            else
+            {
+                // Restaurar el color original del botón (verde)
+                button1.BackColor = originalColor;
+                isRed = false;
+            }
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (!isRed)
+            {
+                // Cambiar el color del botón a rojo
+                button1.BackColor = Color.Red;
+                isRed = true;
+            }
+            else
+            {
+                // Restaurar el color original del botón (verde)
+                button1.BackColor = originalColor;
+                isRed = false;
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (!isRed)
+            {
+                // Cambiar el color del botón a rojo
+                button1.BackColor = Color.Red;
+                isRed = true;
+            }
+            else
+            {
+                // Restaurar el color original del botón (verde)
+                button1.BackColor = originalColor;
+                isRed = false;
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (!isRed)
+            {
+                // Cambiar el color del botón a rojo
+                button1.BackColor = Color.Red;
+                isRed = true;
+            }
+            else
+            {
+                // Restaurar el color original del botón (verde)
+                button1.BackColor = originalColor;
+                isRed = false;
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (!isRed)
+            {
+                // Cambiar el color del botón a rojo
+                button1.BackColor = Color.Red;
+                isRed = true;
+            }
+            else
+            {
+                // Restaurar el color original del botón (verde)
+                button1.BackColor = originalColor;
+                isRed = false;
+            }
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            if (!isRed)
+            {
+                // Cambiar el color del botón a rojo
+                button1.BackColor = Color.Red;
+                isRed = true;
+            }
+            else
+            {
+                // Restaurar el color original del botón (verde)
+                button1.BackColor = originalColor;
+                isRed = false;
+            }
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            if (!isRed)
+            {
+                // Cambiar el color del botón a rojo
+                button1.BackColor = Color.Red;
+                isRed = true;
+            }
+            else
+            {
+                // Restaurar el color original del botón (verde)
+                button1.BackColor = originalColor;
+                isRed = false;
+            }
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            if (!isRed)
+            {
+                // Cambiar el color del botón a rojo
+                button1.BackColor = Color.Red;
+                isRed = true;
+            }
+            else
+            {
+                // Restaurar el color original del botón (verde)
+                button1.BackColor = originalColor;
+                isRed = false;
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            if (!isRed)
+            {
+                // Cambiar el color del botón a rojo
+                button1.BackColor = Color.Red;
+                isRed = true;
+            }
+            else
+            {
+                // Restaurar el color original del botón (verde)
+                button1.BackColor = originalColor;
+                isRed = false;
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            if (!isRed)
+            {
+                // Cambiar el color del botón a rojo
+                button1.BackColor = Color.Red;
+                isRed = true;
+            }
+            else
+            {
+                // Restaurar el color original del botón (verde)
+                button1.BackColor = originalColor;
+                isRed = false;
+            }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            if (!isRed)
+            {
+                // Cambiar el color del botón a rojo
+                button1.BackColor = Color.Red;
+                isRed = true;
+            }
+            else
+            {
+                // Restaurar el color original del botón (verde)
+                button1.BackColor = originalColor;
+                isRed = false;
+            }
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            if (!isRed)
+            {
+                // Cambiar el color del botón a rojo
+                button1.BackColor = Color.Red;
+                isRed = true;
+            }
+            else
+            {
+                // Restaurar el color original del botón (verde)
+                button1.BackColor = originalColor;
+                isRed = false;
+            }
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            if (!isRed)
+            {
+                // Cambiar el color del botón a rojo
+                button1.BackColor = Color.Red;
+                isRed = true;
+            }
+            else
+            {
+                // Restaurar el color original del botón (verde)
+                button1.BackColor = originalColor;
+                isRed = false;
+            }
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            if (!isRed)
+            {
+                // Cambiar el color del botón a rojo
+                button1.BackColor = Color.Red;
+                isRed = true;
+            }
+            else
+            {
+                // Restaurar el color original del botón (verde)
+                button1.BackColor = originalColor;
+                isRed = false;
+            }
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            if (!isRed)
+            {
+                // Cambiar el color del botón a rojo
+                button1.BackColor = Color.Red;
+                isRed = true;
+            }
+            else
+            {
+                // Restaurar el color original del botón (verde)
+                button1.BackColor = originalColor;
+                isRed = false;
+            }
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            if (!isRed)
+            {
+                // Cambiar el color del botón a rojo
+                button1.BackColor = Color.Red;
+                isRed = true;
+            }
+            else
+            {
+                // Restaurar el color original del botón (verde)
+                button1.BackColor = originalColor;
+                isRed = false;
+            }
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            if (!isRed)
+            {
+                // Cambiar el color del botón a rojo
+                button1.BackColor = Color.Red;
+                isRed = true;
+            }
+            else
+            {
+                // Restaurar el color original del botón (verde)
+                button1.BackColor = originalColor;
+                isRed = false;
+            }
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            if (!isRed)
+            {
+                // Cambiar el color del botón a rojo
+                button1.BackColor = Color.Red;
+                isRed = true;
+            }
+            else
+            {
+                // Restaurar el color original del botón (verde)
+                button1.BackColor = originalColor;
+                isRed = false;
+            }
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            if (!isRed)
+            {
+                // Cambiar el color del botón a rojo
+                button1.BackColor = Color.Red;
+                isRed = true;
+            }
+            else
+            {
+                // Restaurar el color original del botón (verde)
+                button1.BackColor = originalColor;
+                isRed = false;
+            }
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            if (!isRed)
+            {
+                // Cambiar el color del botón a rojo
+                button1.BackColor = Color.Red;
+                isRed = true;
+            }
+            else
+            {
+                // Restaurar el color original del botón (verde)
+                button1.BackColor = originalColor;
+                isRed = false;
+            }
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            if (!isRed)
+            {
+                // Cambiar el color del botón a rojo
+                button1.BackColor = Color.Red;
+                isRed = true;
+            }
+            else
+            {
+                // Restaurar el color original del botón (verde)
+                button1.BackColor = originalColor;
+                isRed = false;
+            }
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            if (!isRed)
+            {
+                // Cambiar el color del botón a rojo
+                button1.BackColor = Color.Red;
+                isRed = true;
+            }
+            else
+            {
+                // Restaurar el color original del botón (verde)
+                button1.BackColor = originalColor;
+                isRed = false;
+            }
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            if (!isRed)
+            {
+                // Cambiar el color del botón a rojo
+                button1.BackColor = Color.Red;
+                isRed = true;
+            }
+            else
+            {
+                // Restaurar el color original del botón (verde)
+                button1.BackColor = originalColor;
+                isRed = false;
+            }
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            if (!isRed)
+            {
+                // Cambiar el color del botón a rojo
+                button1.BackColor = Color.Red;
+                isRed = true;
+            }
+            else
+            {
+                // Restaurar el color original del botón (verde)
+                button1.BackColor = originalColor;
+                isRed = false;
+            }
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            if (!isRed)
+            {
+                // Cambiar el color del botón a rojo
+                button1.BackColor = Color.Red;
+                isRed = true;
+            }
+            else
+            {
+                // Restaurar el color original del botón (verde)
+                button1.BackColor = originalColor;
+                isRed = false;
+            }
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            if (!isRed)
+            {
+                // Cambiar el color del botón a rojo
+                button1.BackColor = Color.Red;
+                isRed = true;
+            }
+            else
+            {
+                // Restaurar el color original del botón (verde)
+                button1.BackColor = originalColor;
+                isRed = false;
+            }
         }
     }
 }
