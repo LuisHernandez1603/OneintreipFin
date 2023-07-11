@@ -107,13 +107,13 @@ namespace OneintreipFin
             if (!isRed)
             {
                 // Cambiar el color del botón a rojo
-                button1.BackColor = Color.Red;
+                button3.BackColor = Color.Red;
                 isRed = true;
             }
             else
             {
                 // Restaurar el color original del botón (verde)
-                button1.BackColor = originalColor;
+                button3.BackColor = originalColor;
                 isRed = false;
             }
 
@@ -124,13 +124,13 @@ namespace OneintreipFin
             if (!isRed)
             {
                 // Cambiar el color del botón a rojo
-                button1.BackColor = Color.Red;
+                button2.BackColor = Color.Red;
                 isRed = true;
             }
             else
             {
                 // Restaurar el color original del botón (verde)
-                button1.BackColor = originalColor;
+                button2.BackColor = originalColor;
                 isRed = false;
             }
         }
@@ -140,13 +140,13 @@ namespace OneintreipFin
             if (!isRed)
             {
                 // Cambiar el color del botón a rojo
-                button1.BackColor = Color.Red;
+                button6.BackColor = Color.Red;
                 isRed = true;
             }
             else
             {
                 // Restaurar el color original del botón (verde)
-                button1.BackColor = originalColor;
+                button6.BackColor = originalColor;
                 isRed = false;
             }
         }
@@ -156,13 +156,13 @@ namespace OneintreipFin
             if (!isRed)
             {
                 // Cambiar el color del botón a rojo
-                button1.BackColor = Color.Red;
+                button5.BackColor = Color.Red;
                 isRed = true;
             }
             else
             {
                 // Restaurar el color original del botón (verde)
-                button1.BackColor = originalColor;
+                button5.BackColor = originalColor;
                 isRed = false;
             }
         }
@@ -172,13 +172,13 @@ namespace OneintreipFin
             if (!isRed)
             {
                 // Cambiar el color del botón a rojo
-                button1.BackColor = Color.Red;
+                button4.BackColor = Color.Red;
                 isRed = true;
             }
             else
             {
                 // Restaurar el color original del botón (verde)
-                button1.BackColor = originalColor;
+                button4.BackColor = originalColor;
                 isRed = false;
             }
         }
@@ -188,13 +188,13 @@ namespace OneintreipFin
             if (!isRed)
             {
                 // Cambiar el color del botón a rojo
-                button1.BackColor = Color.Red;
+                button12.BackColor = Color.Red;
                 isRed = true;
             }
             else
             {
                 // Restaurar el color original del botón (verde)
-                button1.BackColor = originalColor;
+                button12.BackColor = originalColor;
                 isRed = false;
             }
         }
@@ -204,13 +204,13 @@ namespace OneintreipFin
             if (!isRed)
             {
                 // Cambiar el color del botón a rojo
-                button1.BackColor = Color.Red;
+                button10.BackColor = Color.Red;
                 isRed = true;
             }
             else
             {
                 // Restaurar el color original del botón (verde)
-                button1.BackColor = originalColor;
+                button10.BackColor = originalColor;
                 isRed = false;
             }
         }
@@ -220,13 +220,13 @@ namespace OneintreipFin
             if (!isRed)
             {
                 // Cambiar el color del botón a rojo
-                button1.BackColor = Color.Red;
+                button11.BackColor = Color.Red;
                 isRed = true;
             }
             else
             {
                 // Restaurar el color original del botón (verde)
-                button1.BackColor = originalColor;
+                button11.BackColor = originalColor;
                 isRed = false;
             }
         }
@@ -236,13 +236,13 @@ namespace OneintreipFin
             if (!isRed)
             {
                 // Cambiar el color del botón a rojo
-                button1.BackColor = Color.Red;
+                button7.BackColor = Color.Red;
                 isRed = true;
             }
             else
             {
                 // Restaurar el color original del botón (verde)
-                button1.BackColor = originalColor;
+                button7.BackColor = originalColor;
                 isRed = false;
             }
         }
@@ -252,13 +252,13 @@ namespace OneintreipFin
             if (!isRed)
             {
                 // Cambiar el color del botón a rojo
-                button1.BackColor = Color.Red;
+                button8.BackColor = Color.Red;
                 isRed = true;
             }
             else
             {
                 // Restaurar el color original del botón (verde)
-                button1.BackColor = originalColor;
+                button8.BackColor = originalColor;
                 isRed = false;
             }
         }
@@ -268,13 +268,13 @@ namespace OneintreipFin
             if (!isRed)
             {
                 // Cambiar el color del botón a rojo
-                button1.BackColor = Color.Red;
+                button9.BackColor = Color.Red;
                 isRed = true;
             }
             else
             {
                 // Restaurar el color original del botón (verde)
-                button1.BackColor = originalColor;
+                button9.BackColor = originalColor;
                 isRed = false;
             }
         }
@@ -284,13 +284,13 @@ namespace OneintreipFin
             if (!isRed)
             {
                 // Cambiar el color del botón a rojo
-                button1.BackColor = Color.Red;
+                button21.BackColor = Color.Red;
                 isRed = true;
             }
             else
             {
                 // Restaurar el color original del botón (verde)
-                button1.BackColor = originalColor;
+                button21.BackColor = originalColor;
                 isRed = false;
             }
         }
@@ -300,13 +300,13 @@ namespace OneintreipFin
             if (!isRed)
             {
                 // Cambiar el color del botón a rojo
-                button1.BackColor = Color.Red;
+                button18.BackColor = Color.Red;
                 isRed = true;
             }
             else
             {
                 // Restaurar el color original del botón (verde)
-                button1.BackColor = originalColor;
+                button18.BackColor = originalColor;
                 isRed = false;
             }
         }
@@ -316,13 +316,13 @@ namespace OneintreipFin
             if (!isRed)
             {
                 // Cambiar el color del botón a rojo
-                button1.BackColor = Color.Red;
+                button20.BackColor = Color.Red;
                 isRed = true;
             }
             else
             {
                 // Restaurar el color original del botón (verde)
-                button1.BackColor = originalColor;
+                button20.BackColor = originalColor;
                 isRed = false;
             }
         }
@@ -332,13 +332,13 @@ namespace OneintreipFin
             if (!isRed)
             {
                 // Cambiar el color del botón a rojo
-                button1.BackColor = Color.Red;
+                button16.BackColor = Color.Red;
                 isRed = true;
             }
             else
             {
                 // Restaurar el color original del botón (verde)
-                button1.BackColor = originalColor;
+                button16.BackColor = originalColor;
                 isRed = false;
             }
         }
@@ -348,13 +348,13 @@ namespace OneintreipFin
             if (!isRed)
             {
                 // Cambiar el color del botón a rojo
-                button1.BackColor = Color.Red;
+                button15.BackColor = Color.Red;
                 isRed = true;
             }
             else
             {
                 // Restaurar el color original del botón (verde)
-                button1.BackColor = originalColor;
+                button15.BackColor = originalColor;
                 isRed = false;
             }
         }
@@ -364,13 +364,13 @@ namespace OneintreipFin
             if (!isRed)
             {
                 // Cambiar el color del botón a rojo
-                button1.BackColor = Color.Red;
+                button17.BackColor = Color.Red;
                 isRed = true;
             }
             else
             {
                 // Restaurar el color original del botón (verde)
-                button1.BackColor = originalColor;
+                button17.BackColor = originalColor;
                 isRed = false;
             }
         }
@@ -380,13 +380,13 @@ namespace OneintreipFin
             if (!isRed)
             {
                 // Cambiar el color del botón a rojo
-                button1.BackColor = Color.Red;
+                button19.BackColor = Color.Red;
                 isRed = true;
             }
             else
             {
                 // Restaurar el color original del botón (verde)
-                button1.BackColor = originalColor;
+                button19.BackColor = originalColor;
                 isRed = false;
             }
         }
@@ -396,13 +396,13 @@ namespace OneintreipFin
             if (!isRed)
             {
                 // Cambiar el color del botón a rojo
-                button1.BackColor = Color.Red;
+                button13.BackColor = Color.Red;
                 isRed = true;
             }
             else
             {
                 // Restaurar el color original del botón (verde)
-                button1.BackColor = originalColor;
+                button13.BackColor = originalColor;
                 isRed = false;
             }
         }
@@ -412,13 +412,13 @@ namespace OneintreipFin
             if (!isRed)
             {
                 // Cambiar el color del botón a rojo
-                button1.BackColor = Color.Red;
+                button14.BackColor = Color.Red;
                 isRed = true;
             }
             else
             {
                 // Restaurar el color original del botón (verde)
-                button1.BackColor = originalColor;
+                button14.BackColor = originalColor;
                 isRed = false;
             }
         }
@@ -428,13 +428,13 @@ namespace OneintreipFin
             if (!isRed)
             {
                 // Cambiar el color del botón a rojo
-                button1.BackColor = Color.Red;
+                button27.BackColor = Color.Red;
                 isRed = true;
             }
             else
             {
                 // Restaurar el color original del botón (verde)
-                button1.BackColor = originalColor;
+                button27.BackColor = originalColor;
                 isRed = false;
             }
         }
@@ -444,13 +444,13 @@ namespace OneintreipFin
             if (!isRed)
             {
                 // Cambiar el color del botón a rojo
-                button1.BackColor = Color.Red;
+                button25.BackColor = Color.Red;
                 isRed = true;
             }
             else
             {
                 // Restaurar el color original del botón (verde)
-                button1.BackColor = originalColor;
+                button25.BackColor = originalColor;
                 isRed = false;
             }
         }
@@ -460,13 +460,13 @@ namespace OneintreipFin
             if (!isRed)
             {
                 // Cambiar el color del botón a rojo
-                button1.BackColor = Color.Red;
+                button23.BackColor = Color.Red;
                 isRed = true;
             }
             else
             {
                 // Restaurar el color original del botón (verde)
-                button1.BackColor = originalColor;
+                button23.BackColor = originalColor;
                 isRed = false;
             }
         }
@@ -476,13 +476,13 @@ namespace OneintreipFin
             if (!isRed)
             {
                 // Cambiar el color del botón a rojo
-                button1.BackColor = Color.Red;
+                button26.BackColor = Color.Red;
                 isRed = true;
             }
             else
             {
                 // Restaurar el color original del botón (verde)
-                button1.BackColor = originalColor;
+                button26.BackColor = originalColor;
                 isRed = false;
             }
         }
@@ -492,13 +492,13 @@ namespace OneintreipFin
             if (!isRed)
             {
                 // Cambiar el color del botón a rojo
-                button1.BackColor = Color.Red;
+                button24.BackColor = Color.Red;
                 isRed = true;
             }
             else
             {
                 // Restaurar el color original del botón (verde)
-                button1.BackColor = originalColor;
+                button24.BackColor = originalColor;
                 isRed = false;
             }
         }
@@ -508,13 +508,13 @@ namespace OneintreipFin
             if (!isRed)
             {
                 // Cambiar el color del botón a rojo
-                button1.BackColor = Color.Red;
+                button22.BackColor = Color.Red;
                 isRed = true;
             }
             else
             {
                 // Restaurar el color original del botón (verde)
-                button1.BackColor = originalColor;
+                button22.BackColor = originalColor;
                 isRed = false;
             }
         }

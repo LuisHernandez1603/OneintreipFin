@@ -34,14 +34,15 @@ namespace OneintreipFin
 
 
                 MessageBox.Show("¡Pago exitoso!", "Pago exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+                Asientos asientos = new Asientos();
+                asientos.Show();
             }
             else
             {
                 MessageBox.Show("El pago no pudo ser procesado. Por favor, verifique los detalles de su tarjeta.", "Pago fallido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            this.Hide();
-            Asientos asientos = new Asientos();
-            asientos.Show();
+           
 
 
         }
