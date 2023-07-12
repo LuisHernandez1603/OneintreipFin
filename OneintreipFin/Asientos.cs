@@ -28,9 +28,10 @@ namespace OneintreipFin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Has reservado el asiento 1", "Genere su codigo porfavor");
-            
-            
+            MessageBox.Show("Este asiento ha sido reservado exitosamente.", "Reserva Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+
         }
 
         private void Generar_Click(object sender, EventArgs e)
@@ -95,419 +96,133 @@ namespace OneintreipFin
         private void button3_Click(object sender, EventArgs e)
         {
 
-            if (!isRed)
-            {
-                // Cambiar el color del botón a rojo
-                button3.BackColor = Color.Red;
-                isRed = true;
-            }
-            else
-            {
-                // Restaurar el color original del botón (verde)
-                button3.BackColor = originalColor;
-                isRed = false;
-            }
+            MessageBox.Show("Este asiento ya ha sido reservado", "Asiento No Reservado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (!isRed)
-            {
-                // Cambiar el color del botón a rojo
-                button2.BackColor = Color.Red;
-                isRed = true;
-            }
-            else
-            {
-                // Restaurar el color original del botón (verde)
-                button2.BackColor = originalColor;
-                isRed = false;
-            }
+            MessageBox.Show("Este asiento ya ha sido reservado", "Asiento No Reservado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            if (!isRed)
-            {
-                // Cambiar el color del botón a rojo
-                button6.BackColor = Color.Red;
-                isRed = true;
-            }
-            else
-            {
-                // Restaurar el color original del botón (verde)
-                button6.BackColor = originalColor;
-                isRed = false;
-            }
+            MessageBox.Show("Este asiento ya ha sido reservado", "Asiento No Reservado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if (!isRed)
-            {
-                // Cambiar el color del botón a rojo
-                button5.BackColor = Color.Red;
-                isRed = true;
-            }
-            else
-            {
-                // Restaurar el color original del botón (verde)
-                button5.BackColor = originalColor;
-                isRed = false;
-            }
+            MessageBox.Show("Este asiento ha sido reservado exitosamente.", "Reserva Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (!isRed)
-            {
-                // Cambiar el color del botón a rojo
-                button4.BackColor = Color.Red;
-                isRed = true;
-            }
-            else
-            {
-                // Restaurar el color original del botón (verde)
-                button4.BackColor = originalColor;
-                isRed = false;
-            }
+            MessageBox.Show("Este asiento ya ha sido reservado", "Asiento No Reservado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            if (!isRed)
-            {
-                // Cambiar el color del botón a rojo
-                button12.BackColor = Color.Red;
-                isRed = true;
-            }
-            else
-            {
-                // Restaurar el color original del botón (verde)
-                button12.BackColor = originalColor;
-                isRed = false;
-            }
+            MessageBox.Show("Este asiento ya ha sido reservado", "Asiento No Reservado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            if (!isRed)
-            {
-                // Cambiar el color del botón a rojo
-                button10.BackColor = Color.Red;
-                isRed = true;
-            }
-            else
-            {
-                // Restaurar el color original del botón (verde)
-                button10.BackColor = originalColor;
-                isRed = false;
-            }
+            MessageBox.Show("Este asiento ha sido reservado exitosamente.", "Reserva Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            if (!isRed)
-            {
-                // Cambiar el color del botón a rojo
-                button11.BackColor = Color.Red;
-                isRed = true;
-            }
-            else
-            {
-                // Restaurar el color original del botón (verde)
-                button11.BackColor = originalColor;
-                isRed = false;
-            }
+            MessageBox.Show("Este asiento ha sido reservado exitosamente.", "Reserva Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            if (!isRed)
-            {
-                // Cambiar el color del botón a rojo
-                button7.BackColor = Color.Red;
-                isRed = true;
-            }
-            else
-            {
-                // Restaurar el color original del botón (verde)
-                button7.BackColor = originalColor;
-                isRed = false;
-            }
+            MessageBox.Show("Este asiento ha sido reservado exitosamente.", "Reserva Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            if (!isRed)
-            {
-                // Cambiar el color del botón a rojo
-                button8.BackColor = Color.Red;
-                isRed = true;
-            }
-            else
-            {
-                // Restaurar el color original del botón (verde)
-                button8.BackColor = originalColor;
-                isRed = false;
-            }
+            MessageBox.Show("Este asiento ya ha sido reservado", "Asiento Reservado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            if (!isRed)
-            {
-                // Cambiar el color del botón a rojo
-                button9.BackColor = Color.Red;
-                isRed = true;
-            }
-            else
-            {
-                // Restaurar el color original del botón (verde)
-                button9.BackColor = originalColor;
-                isRed = false;
-            }
+            MessageBox.Show("Este asiento ha sido reservado exitosamente.", "Reserva Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void button21_Click(object sender, EventArgs e)
         {
-            if (!isRed)
-            {
-                // Cambiar el color del botón a rojo
-                button21.BackColor = Color.Red;
-                isRed = true;
-            }
-            else
-            {
-                // Restaurar el color original del botón (verde)
-                button21.BackColor = originalColor;
-                isRed = false;
-            }
+            MessageBox.Show("Este asiento ha sido reservado exitosamente.", "Reserva Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void button18_Click(object sender, EventArgs e)
         {
-            if (!isRed)
-            {
-                // Cambiar el color del botón a rojo
-                button18.BackColor = Color.Red;
-                isRed = true;
-            }
-            else
-            {
-                // Restaurar el color original del botón (verde)
-                button18.BackColor = originalColor;
-                isRed = false;
-            }
+            MessageBox.Show("Este asiento ha sido reservado exitosamente.", "Reserva Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void button20_Click(object sender, EventArgs e)
         {
-            if (!isRed)
-            {
-                // Cambiar el color del botón a rojo
-                button20.BackColor = Color.Red;
-                isRed = true;
-            }
-            else
-            {
-                // Restaurar el color original del botón (verde)
-                button20.BackColor = originalColor;
-                isRed = false;
-            }
+            MessageBox.Show("Este asiento ya ha sido reservado", "Asiento Reservado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
-            if (!isRed)
-            {
-                // Cambiar el color del botón a rojo
-                button16.BackColor = Color.Red;
-                isRed = true;
-            }
-            else
-            {
-                // Restaurar el color original del botón (verde)
-                button16.BackColor = originalColor;
-                isRed = false;
-            }
+            MessageBox.Show("Este asiento ha sido reservado exitosamente.", "Reserva Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
-            if (!isRed)
-            {
-                // Cambiar el color del botón a rojo
-                button15.BackColor = Color.Red;
-                isRed = true;
-            }
-            else
-            {
-                // Restaurar el color original del botón (verde)
-                button15.BackColor = originalColor;
-                isRed = false;
-            }
+            MessageBox.Show("Este asiento ha sido reservado exitosamente.", "Reserva Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void button17_Click(object sender, EventArgs e)
         {
-            if (!isRed)
-            {
-                // Cambiar el color del botón a rojo
-                button17.BackColor = Color.Red;
-                isRed = true;
-            }
-            else
-            {
-                // Restaurar el color original del botón (verde)
-                button17.BackColor = originalColor;
-                isRed = false;
-            }
+            MessageBox.Show("Este asiento ha sido reservado exitosamente.", "Reserva Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void button19_Click(object sender, EventArgs e)
         {
-            if (!isRed)
-            {
-                // Cambiar el color del botón a rojo
-                button19.BackColor = Color.Red;
-                isRed = true;
-            }
-            else
-            {
-                // Restaurar el color original del botón (verde)
-                button19.BackColor = originalColor;
-                isRed = false;
-            }
+            MessageBox.Show("Este asiento ha sido reservado exitosamente.", "Reserva No Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            if (!isRed)
-            {
-                // Cambiar el color del botón a rojo
-                button13.BackColor = Color.Red;
-                isRed = true;
-            }
-            else
-            {
-                // Restaurar el color original del botón (verde)
-                button13.BackColor = originalColor;
-                isRed = false;
-            }
+            MessageBox.Show("Este asiento ha sido reservado exitosamente.", "Reserva No Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
-            if (!isRed)
-            {
-                // Cambiar el color del botón a rojo
-                button14.BackColor = Color.Red;
-                isRed = true;
-            }
-            else
-            {
-                // Restaurar el color original del botón (verde)
-                button14.BackColor = originalColor;
-                isRed = false;
-            }
+            MessageBox.Show("Este asiento ya ha sido reservado", "Asiento No Reservado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void button27_Click(object sender, EventArgs e)
         {
-            if (!isRed)
-            {
-                // Cambiar el color del botón a rojo
-                button27.BackColor = Color.Red;
-                isRed = true;
-            }
-            else
-            {
-                // Restaurar el color original del botón (verde)
-                button27.BackColor = originalColor;
-                isRed = false;
-            }
+            MessageBox.Show("Este asiento ya ha sido reservado", "Asiento No Reservado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void button25_Click(object sender, EventArgs e)
         {
-            if (!isRed)
-            {
-                // Cambiar el color del botón a rojo
-                button25.BackColor = Color.Red;
-                isRed = true;
-            }
-            else
-            {
-                // Restaurar el color original del botón (verde)
-                button25.BackColor = originalColor;
-                isRed = false;
-            }
+            MessageBox.Show("Este asiento ha sido reservado exitosamente.", "Reserva Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void button23_Click(object sender, EventArgs e)
         {
-            if (!isRed)
-            {
-                // Cambiar el color del botón a rojo
-                button23.BackColor = Color.Red;
-                isRed = true;
-            }
-            else
-            {
-                // Restaurar el color original del botón (verde)
-                button23.BackColor = originalColor;
-                isRed = false;
-            }
+            MessageBox.Show("Este asiento ya ha sido reservado", "Asiento No Reservado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void button26_Click(object sender, EventArgs e)
         {
-            if (!isRed)
-            {
-                // Cambiar el color del botón a rojo
-                button26.BackColor = Color.Red;
-                isRed = true;
-            }
-            else
-            {
-                // Restaurar el color original del botón (verde)
-                button26.BackColor = originalColor;
-                isRed = false;
-            }
+            MessageBox.Show("Este asiento ha sido reservado exitosamente.", "Reserva Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void button24_Click(object sender, EventArgs e)
         {
-            if (!isRed)
-            {
-                // Cambiar el color del botón a rojo
-                button24.BackColor = Color.Red;
-                isRed = true;
-            }
-            else
-            {
-                // Restaurar el color original del botón (verde)
-                button24.BackColor = originalColor;
-                isRed = false;
-            }
+            MessageBox.Show("Este asiento ha sido reservado exitosamente.", "Reserva Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void button22_Click(object sender, EventArgs e)
         {
-            if (!isRed)
-            {
-                // Cambiar el color del botón a rojo
-                button22.BackColor = Color.Red;
-                isRed = true;
-            }
-            else
-            {
-                // Restaurar el color original del botón (verde)
-                button22.BackColor = originalColor;
-                isRed = false;
-            }
+            MessageBox.Show("Este asiento ya ha sido reservado", "Asiento No Reservado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void miPerfilToolStripMenuItem_Click(object sender, EventArgs e)

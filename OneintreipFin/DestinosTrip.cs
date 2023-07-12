@@ -46,5 +46,18 @@ namespace OneintreipFin
             myProfile.Show();
             this.Close();
         }
+
+        private void configuracionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MyProfile myProfile = new MyProfile();
+            myProfile.Show();
+            this.Close();
+        }
     }
 }

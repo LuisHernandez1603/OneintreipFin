@@ -121,5 +121,13 @@ namespace OneintreipFin
             }
 
         }
+
+        private void usuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MyProfile myProfile = new MyProfile();
+            myProfile.Show();
+            this.Close();
+        }
     }
 }
