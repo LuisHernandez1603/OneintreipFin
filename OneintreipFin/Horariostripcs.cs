@@ -43,6 +43,7 @@ namespace OneintreipFin
         {
             MyProfile usuario = new MyProfile();
             usuario.Show();
+            this.Close();
             
         }
 
@@ -55,6 +56,7 @@ namespace OneintreipFin
         {
             Asientos asientos = new Asientos();
             asientos.Show();
+            this.Close();
         }
     }
 }
