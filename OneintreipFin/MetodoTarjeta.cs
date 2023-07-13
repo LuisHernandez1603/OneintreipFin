@@ -42,6 +42,7 @@ namespace OneintreipFin
             {
                 MessageBox.Show("El pago no pudo ser procesado. Por favor, verifique los detalles de su tarjeta.", "Pago fallido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            
            
 
 
@@ -127,6 +128,32 @@ namespace OneintreipFin
             this.Hide();
             MyProfile myProfile = new MyProfile();
             myProfile.Show();
+            this.Close();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Estás seguro que quieres salir?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+
+
+                foreach (Form form in Application.OpenForms)
+                {
+                    form.Hide();
+
+                }
+                Application.Exit();
+
+
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Horariostripcs destinosTripForm
+               = new  Horariostripcs ();
+            destinosTripForm.Show();
             this.Close();
         }
     }

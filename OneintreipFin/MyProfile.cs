@@ -109,5 +109,31 @@ namespace OneintreipFin
         {
 
         }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Estás seguro que quieres salir?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+
+
+                foreach (Form form in Application.OpenForms)
+                {
+                    form.Hide();
+
+                }
+                Application.Exit();
+
+
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+             DestinosTrip destinosTripForm
+                = new DestinosTrip();
+            destinosTripForm.Show();
+            this.Close();
+        }
     }
 }

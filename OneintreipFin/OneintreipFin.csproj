@@ -64,6 +64,12 @@
     <Compile Include="CrearCuenta.Designer.cs">
       <DependentUpon>CrearCuenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Despedida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Despedida.Designer.cs">
+      <DependentUpon>Despedida.cs</DependentUpon>
+    </Compile>
     <Compile Include="DestinosTrip.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CrearCuenta.resx">
       <DependentUpon>CrearCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Despedida.resx">
+      <DependentUpon>Despedida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DestinosTrip.resx">
       <DependentUpon>DestinosTrip.cs</DependentUpon>

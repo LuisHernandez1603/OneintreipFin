@@ -65,6 +65,12 @@ namespace OneintreipFin
             $"{ randomLetter}{ randomNumber} " ;
 
             TxtCode.Text = generatedCode;
+            MessageBox.Show("Codigo generado.", "Codigo de reserva", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            this.Hide();
+            Despedida despedida = new Despedida();
+            despedida.Show();
+            this.Close();
         }
 
         private void Asientos_Load(object sender, EventArgs e)

@@ -38,5 +38,23 @@ namespace OneintreipFin
             MetodoTarjeta metodoTarjeta = new MetodoTarjeta();
             metodoTarjeta.Show();
         }
+
+        private void usuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MyProfile usuario = new MyProfile();
+            usuario.Show();
+            
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Asientos asientos = new Asientos();
+            asientos.Show();
+        }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MetodoPNeto));
             this.label4 = new System.Windows.Forms.Label();
             this.txtcel = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -229,8 +230,9 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtcel);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MetodoPNeto";
-            this.Text = "MetodoPNeto";
+            this.Text = "One In Trip";
             this.Load += new System.EventHandler(this.MetodoPNeto_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

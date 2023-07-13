@@ -28,15 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CrearCuenta));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtlastname = new System.Windows.Forms.MaskedTextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtname = new System.Windows.Forms.MaskedTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtnum = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtlastname = new System.Windows.Forms.MaskedTextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtname = new System.Windows.Forms.MaskedTextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.maskedb = new System.Windows.Forms.Button();
             this.txtcel = new System.Windows.Forms.MaskedTextBox();
@@ -67,6 +68,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // txtlastname
+            // 
+            this.txtlastname.BackColor = System.Drawing.Color.White;
+            this.txtlastname.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.txtlastname.ForeColor = System.Drawing.Color.Black;
+            this.txtlastname.Location = new System.Drawing.Point(104, 155);
+            this.txtlastname.Name = "txtlastname";
+            this.txtlastname.PasswordChar = '*';
+            this.txtlastname.Size = new System.Drawing.Size(225, 32);
+            this.txtlastname.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(161, 128);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(106, 24);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Contraseña";
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -76,6 +98,26 @@
             this.label5.Size = new System.Drawing.Size(338, 35);
             this.label5.TabIndex = 8;
             this.label5.Text = "¡Ingrese sus datos porfavor!";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(135, 65);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(165, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Ingrese su nombre";
+            // 
+            // txtname
+            // 
+            this.txtname.BackColor = System.Drawing.Color.White;
+            this.txtname.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtname.ForeColor = System.Drawing.Color.Black;
+            this.txtname.Location = new System.Drawing.Point(104, 92);
+            this.txtname.Name = "txtname";
+            this.txtname.Size = new System.Drawing.Size(225, 32);
+            this.txtname.TabIndex = 1;
             // 
             // label4
             // 
@@ -108,47 +150,6 @@
             this.label3.Size = new System.Drawing.Size(195, 22);
             this.label3.TabIndex = 4;
             this.label3.Text = "Ingrese su N°de telefono";
-            // 
-            // txtlastname
-            // 
-            this.txtlastname.BackColor = System.Drawing.Color.White;
-            this.txtlastname.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.txtlastname.ForeColor = System.Drawing.Color.Black;
-            this.txtlastname.Location = new System.Drawing.Point(104, 155);
-            this.txtlastname.Name = "txtlastname";
-            this.txtlastname.PasswordChar = '*';
-            this.txtlastname.Size = new System.Drawing.Size(225, 32);
-            this.txtlastname.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(161, 128);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 24);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Contraseña";
-            // 
-            // txtname
-            // 
-            this.txtname.BackColor = System.Drawing.Color.White;
-            this.txtname.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtname.ForeColor = System.Drawing.Color.Black;
-            this.txtname.Location = new System.Drawing.Point(104, 92);
-            this.txtname.Name = "txtname";
-            this.txtname.Size = new System.Drawing.Size(225, 32);
-            this.txtname.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(135, 65);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ingrese su nombre";
             // 
             // button3
             // 
@@ -274,9 +275,10 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CrearCuenta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CrearCuenta";
+            this.Text = "One In Trip";
             this.Load += new System.EventHandler(this.CrearCuenta_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
