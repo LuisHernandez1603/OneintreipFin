@@ -63,7 +63,7 @@ namespace OneintreipFin
             this.Hide();
             Ayuda ayuda = new Ayuda();
             ayuda.Show();
-            this.Close();
+            
         }
     }
 }

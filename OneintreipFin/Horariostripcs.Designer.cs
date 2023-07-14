@@ -33,7 +33,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.configuracionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -87,19 +86,6 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(820, 456);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(150, 35);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Siguiente";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Transparent;
@@ -109,8 +95,9 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(150, 35);
             this.button4.TabIndex = 14;
-            this.button4.Text = "Cancelar";
+            this.button4.Text = "Atras";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // menuStrip1
             // 
@@ -144,7 +131,7 @@
             // usuarioToolStripMenuItem
             // 
             this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
             this.usuarioToolStripMenuItem.Text = "Usuario";
             this.usuarioToolStripMenuItem.Click += new System.EventHandler(this.usuarioToolStripMenuItem_Click);
             // 
@@ -180,7 +167,6 @@
             this.ClientSize = new System.Drawing.Size(982, 503);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
@@ -206,7 +192,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem configuracionToolStripMenuItem;

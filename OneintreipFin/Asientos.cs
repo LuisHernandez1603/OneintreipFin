@@ -243,5 +243,12 @@ namespace OneintreipFin
             ayuda.Show();
             this.Close();
         }
+
+        private void button29_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Horariostripcs horariostripcs = new Horariostripcs();
+            horariostripcs.Show();
+        }
     }
 }

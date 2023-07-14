@@ -66,6 +66,7 @@
             this.Generar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button29 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -94,7 +95,7 @@
             // miPerfilToolStripMenuItem
             // 
             this.miPerfilToolStripMenuItem.Name = "miPerfilToolStripMenuItem";
-            this.miPerfilToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.miPerfilToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
             this.miPerfilToolStripMenuItem.Text = "Mi Perfil";
             this.miPerfilToolStripMenuItem.Click += new System.EventHandler(this.miPerfilToolStripMenuItem_Click);
             // 
@@ -485,12 +486,24 @@
             this.pictureBox1.TabIndex = 65;
             this.pictureBox1.TabStop = false;
             // 
+            // button29
+            // 
+            this.button29.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button29.Location = new System.Drawing.Point(12, 469);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(122, 32);
+            this.button29.TabIndex = 66;
+            this.button29.Text = "Atras";
+            this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.button29_Click);
+            // 
             // Asientos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(206)))), ((int)(((byte)(223)))));
             this.ClientSize = new System.Drawing.Size(992, 513);
+            this.Controls.Add(this.button29);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Generar);
@@ -576,5 +589,6 @@
         private System.Windows.Forms.ToolStripMenuItem miPerfilToolStripMenuItem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button29;
     }
 }

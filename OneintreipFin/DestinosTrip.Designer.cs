@@ -57,6 +57,7 @@
             this.button4.TabIndex = 10;
             this.button4.Text = "Granada";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -69,6 +70,7 @@
             this.button3.TabIndex = 9;
             this.button3.Text = "León";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -113,7 +115,7 @@
             this.button5.ForeColor = System.Drawing.Color.Black;
             this.button5.Location = new System.Drawing.Point(12, 456);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(150, 35);
+            this.button5.Size = new System.Drawing.Size(206, 35);
             this.button5.TabIndex = 12;
             this.button5.Text = "Volver a inicio";
             this.button5.UseVisualStyleBackColor = false;
@@ -199,6 +201,7 @@
             this.Name = "DestinosTrip";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "One In Trip";
+            this.Load += new System.EventHandler(this.DestinosTrip_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
