@@ -235,5 +235,13 @@ namespace OneintreipFin
         {
 
         }
+
+        private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Ayuda ayuda = new Ayuda();  
+            ayuda.Show();
+            this.Close();
+        }
     }
 }

@@ -65,7 +65,9 @@
             this.TxtCode = new System.Windows.Forms.TextBox();
             this.Generar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -92,7 +94,7 @@
             // miPerfilToolStripMenuItem
             // 
             this.miPerfilToolStripMenuItem.Name = "miPerfilToolStripMenuItem";
-            this.miPerfilToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
+            this.miPerfilToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.miPerfilToolStripMenuItem.Text = "Mi Perfil";
             this.miPerfilToolStripMenuItem.Click += new System.EventHandler(this.miPerfilToolStripMenuItem_Click);
             // 
@@ -101,6 +103,7 @@
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
+            this.ayudaToolStripMenuItem.Click += new System.EventHandler(this.ayudaToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
@@ -447,14 +450,14 @@
             // 
             // TxtCode
             // 
-            this.TxtCode.Location = new System.Drawing.Point(677, 185);
+            this.TxtCode.Location = new System.Drawing.Point(657, 246);
             this.TxtCode.Name = "TxtCode";
             this.TxtCode.Size = new System.Drawing.Size(174, 22);
             this.TxtCode.TabIndex = 62;
             // 
             // Generar
             // 
-            this.Generar.Location = new System.Drawing.Point(727, 213);
+            this.Generar.Location = new System.Drawing.Point(707, 274);
             this.Generar.Name = "Generar";
             this.Generar.Size = new System.Drawing.Size(75, 23);
             this.Generar.TabIndex = 63;
@@ -466,11 +469,21 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(618, 158);
+            this.label1.Location = new System.Drawing.Point(598, 219);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(289, 24);
             this.label1.TabIndex = 64;
             this.label1.Text = "Genere su codigo de reserva aqui";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::OneintreipFin.Properties.Resources.logo_inteWL18_2;
+            this.pictureBox1.Location = new System.Drawing.Point(825, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(155, 165);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 65;
+            this.pictureBox1.TabStop = false;
             // 
             // Asientos
             // 
@@ -478,6 +491,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(206)))), ((int)(((byte)(223)))));
             this.ClientSize = new System.Drawing.Size(992, 513);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Generar);
             this.Controls.Add(this.TxtCode);
@@ -517,6 +531,7 @@
             this.Load += new System.EventHandler(this.Asientos_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -560,5 +575,6 @@
         private System.Windows.Forms.Button Generar;
         private System.Windows.Forms.ToolStripMenuItem miPerfilToolStripMenuItem;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

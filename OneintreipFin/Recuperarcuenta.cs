@@ -37,9 +37,19 @@ namespace OneintreipFin
 
         private void button1_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Correo electronico valido", "Recuperar correo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Hide();
             Mensajedeconfirmación mensajedeconfirmación = new Mensajedeconfirmación();
             mensajedeconfirmación.Show();
+            this.Close();
+        }
+
+        private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Ayuda ayuda = new Ayuda();
+            ayuda.Show();
+            this.Close();
         }
     }
 }

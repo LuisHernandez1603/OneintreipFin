@@ -59,5 +59,21 @@ namespace OneintreipFin
             myProfile.Show();
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Horariostripcs horariostripcsForm
+                = new Horariostripcs();
+            horariostripcsForm.Show();
+            this.Close();
+        }
+
+        private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Ayuda ayuda = new Ayuda();
+            ayuda.Show();
+            this.Close();
+        }
     }
 }

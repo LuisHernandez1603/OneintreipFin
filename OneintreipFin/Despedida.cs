@@ -31,5 +31,13 @@ namespace OneintreipFin
             MyProfile usuario = new MyProfile();
             usuario.Show(); 
         }
+
+        private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Ayuda ayuda = new Ayuda();
+            ayuda.Show();
+            this.Close();
+        }
     }
 }

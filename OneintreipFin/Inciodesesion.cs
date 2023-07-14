@@ -127,5 +127,20 @@ namespace OneintreipFin
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide ();
+            Recuperarcuenta recuperarcuenta = new Recuperarcuenta();
+            recuperarcuenta.Show();
+        }
+
+        private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Ayuda ayuda = new Ayuda();
+            ayuda.Show();
+            this.Close();
+        }
     }
 }

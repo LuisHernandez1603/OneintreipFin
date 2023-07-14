@@ -40,5 +40,30 @@ namespace OneintreipFin
                 Application.Exit();
             }
         }
+
+        private void perfilToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MyProfile myProfile = new MyProfile();
+            myProfile.Show();
+        }
+
+        private void Mensajedeconfirmación_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Ayuda ayuda = new Ayuda();
+            ayuda.Show();
+            this.Close();
+        }
     }
 }
